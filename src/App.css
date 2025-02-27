@@ -269,6 +269,11 @@ h1 {
 }
 
 /* Contact Section */
+
+.contact-section{
+  text-align: center;
+}
+
 .contact-cont {
   display: flex;
   flex-direction: row;
@@ -277,7 +282,24 @@ h1 {
   padding: var(--section-padding);
   background-color: #5fefd4;
   margin: var(--section-padding) 0;
+  flex-wrap: wrap; /* Ensures responsiveness */
 }
+
+/* Style for direct child div elements */
+.contact-cont > div {
+   /* Allows children to take equal space */
+ /* Prevents breaking on smaller screens */
+  text-align: center; /* Center-align content */
+}
+
+/* Mobile View (Below 768px) */
+@media (max-width: 768px) {
+  .contact-cont {
+    flex-direction: column; /* Stack elements in a column */
+    padding: 10px;
+  }
+}
+
 
 .contact-cont a {
   color: var(--secondary-color);
@@ -442,9 +464,19 @@ footer {
 }
 
 .fab-ins{
-  margin-left: 4%;
-  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+@media (min-width: 1025px) {
+  .fab-ins{
+    margin-left: 4%;
+    padding-top: 1rem;
+  }
+}
+
 
 .instagram{
   margin-top: 2rem;

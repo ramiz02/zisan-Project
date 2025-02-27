@@ -208,7 +208,7 @@ const Home = () => (
     {/* Contact information section */}
 
     <div className='contact-cont'>
-      <div>
+      <div className='contact-info'>
         <h1 id="contact-section">Contact Information</h1>
         <h3><strong>Email: </strong><a href="mailto:solutionistminds@gmail.com?subject=Inquiry&body=Hello,%20I%20would%20like%20to%20know%20more...">
         solutionistminds@gmail.com
@@ -217,7 +217,7 @@ const Home = () => (
         <h3><strong>Address:</strong> Hooghly, West Bengal, India 712147</h3>
       </div>
       <div className='fab-ins'>
-        <a href='https://wa.me/message/D3H4TPG5AMA7K1' target='_blank' rel="noreferrer">
+        <a href='https://www.facebook.com/share/15EpNxpfde/' target='_blank' rel="noreferrer">
             <button className='link-button'><FaFacebookSquare />Facebook</button>
         </a>
         <a href='https://www.instagram.com/curioustically_zishan?igsh=MXFwYjN
